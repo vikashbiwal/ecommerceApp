@@ -1,0 +1,134 @@
+/* 
+  Localizable.strings
+  ShoppingCartApp
+
+  Created by Vikash Kumar on 09/06/17.
+  Copyright © 2017 Vikash Kumar. All rights reserved.
+*/
+
+
+"Product Details" = "Product Details";
+"CameraAcceesDenied" = "You might have denied camera access. Please go to setting and allow camera access.";
+
+//WishList Module
+"GroupNameRequired" = "Please enter group name!";
+"UpdateCategory" = "Update Category";
+"Save" = "Save";
+"Delete" = "Delete";
+"Cancel" = "Cancel";
+
+//Cart Screen
+"Remove" = "Remove";
+"RemoveItem" = "Remove Item";
+"WantToRemoveItem" = "Are your sure you want to remove this item?";
+"ItemAlreadyInCart" = "This product is already in the cart, go to cart !.";
+"CartItemsLoading" = "Cart Items are loading...";
+"CartIsEmpty" = "Your cart is empty! Go to shopping.";
+"Total" = "Total";
+"GST" = "GST";
+"Discount" = "Discount";
+"Net Amount" = "Net Amount";
+"RemoveFromWishlist" = "Remove from Favourite";
+"AddToWishlist" = "Add to Favourite";
+
+//PRODUCT LIST & FILTER
+"FILTERTITLE" = "FILTER";
+"SORTBYTITLE" = "SORT BY";
+"LISTNAVTITLE" = "Retail Store";
+"CLEARTITLE" = "Clear";
+"APPLYTITLE" = "Apply";
+"OFFLINEMSG" = "Your are offline!!!!!";
+"OUTOFSTOCKMSG" = "This item is out of stock. Please make favorite for future reference.";
+
+//PAYMENT MODULE
+"PAYMENTTITLE" = "Pay";
+"PAYMENTOPTION" = "Payment options";
+"OPTIONS1" = "Cash on delivery";
+"OPTIONS2" = "Debit/Credit card";
+"OPTIONS3" = "Net banking";
+"OPTIONS4" = "Paytm wallet";
+
+
+"PAYBUTTONTITLE" = "PLACE ORDER";
+"CANCELORDERTITLE" = "CANCEL ORDER";
+"VIEWORDER" = "View Order";
+"SUMMARY" = "Order summary";
+"NO_OPTION_MSG" = "Please select payment option";
+"USERCOMMENT" = "Your comments";
+
+//CLEAR CART
+"EMPTYCARTTITLE" = "Cancel Order";
+"EMPTYYES" = "Yes";
+"EMPTYNO" = "No";
+"WantToEmptyCart" = "Are your sure you want to cancel order?";
+
+
+
+//Login
+"USERNAME" = "Username is required";
+"PASSWORD" = "Password is required";
+"NAME"     = "Name is required";
+"EMAIL"    = "Email is required";
+"EMAIL_VALID"    = "Invalid email";
+"MOBILE"   = "Mobile number is required";
+"MOBILE_LENGTH" =   "Invalid mobile number";
+"DOB"      =    "DOB is required";
+"PASSWORD_LENGTH"   =   "Password should be between 6 to 20 characters";
+"PASSWORD_MATCH"    =   "Passwords do not match";
+"REENTER_PASSWORD"  ="Re-enter Password is required";
+
+// Add Delivery Address
+
+"CONTACTNUMBER" = "Contact number is required";
+"CONTACTNUMBER_VALID" = "Invalid contact number";
+"ADDRESS" = "Address is required";
+"CITY" = "City is required";
+"STATE" = "State is required";
+"COUNTRY" = "Country is required";
+"PINCODE" = "Pincode is required";
+"PINCODE_VALID" = "Invalid pincode";
+"EMAILADDRESS" = "Email address is required";
+"EMAIL_ADDRESS_VALID" = "Invalid email address";
+"LABLE_NAME" = "Name";
+"LABLE_CONTACT_NUMBER" = "Contact number";
+"LABEL_EMAIL_ADDRESS" = "Email address";
+"LABEL_ADDRESS" = "Address";
+"LABEL_CITY" = "City";
+"LABEL_STATE" = "State";
+"LABEL_COUNTRY" = "Country";
+"LABEL_PINCODE" = "Pincode";
+"LABEL_DEFAULT_ADDRESS" = "Make this as my default address";
+
+// Address
+
+"ADD_DELIVERY_ADDRESS" = "Add delivery address";
+"SELECT_THE_STORE" = "Select the store";
+"WALLETS" = "Wallets";
+"ORDER_SUMMERY" = "Order summery";
+"ORDER_TOTAL" = "Order Total";
+"VIEW_ORDER" = "View order";
+"MAKE_PAYMENT" = "MAKE PAYMENT";
+"SELECT_DELIVERY_OR_PICKUP_ADDRESS" = "Either enter delivery address or select the store for pick up";
+"DELIVERY_IS_NOT_AVAILABLE" = "Delivery is not available at your registered pincode. Please select pickup from store.";
+"DO_WANT_TO_DELETE_ADDRESS" = "Do you want to delete address ?";
+
+// cotact us
+
+// thankyou screen
+"Thanksfororder" = "Thank you for shopping with us!";
+"Orderid" = "Order I'D # ";
+"Emailconfirmation" = "You will recive an email confirmation at ";
+"Thankyoudeliveryaddress" = "Shipping address:";
+"Thankyoupickupaddress" = "Pickup address:";
+
+
+// cotact us
+
+"LABLE_TOPIC" = "Topic";
+"LABLE_COMMENT" = "Comment";
+"TOPIC" = "Topic is required";
+"COMMENT" = "Comment is required";
+
+// buy gift coupons
+"SELECT_GIFT_COUPONS" = "Select gift coupons";
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Mbs-gu-vAH" customClass="CollectionViewCell" customModule="ShoppingCartApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re2-4n-sqy" customClass="WidthLabel" customModule="ShoppingCartApp" customModuleProvider="target">
+                        <rect key="frame" x="30.5" y="65" width="39.5" height="19"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.69803921568627447" green="0.69803921568627447" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cf4-bl-8P1">
+                        <rect key="frame" x="30" y="20" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Mat-pV-Ccs"/>
+                            <constraint firstAttribute="width" secondItem="Cf4-bl-8P1" secondAttribute="height" multiplier="1:1" id="zRF-e9-Pg1"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Cf4-bl-8P1" firstAttribute="centerX" secondItem="Mbs-gu-vAH" secondAttribute="centerX" id="2Df-e3-m6i"/>
+                <constraint firstItem="Re2-4n-sqy" firstAttribute="centerX" secondItem="Cf4-bl-8P1" secondAttribute="centerX" id="QRV-wO-jTq"/>
+                <constraint firstItem="Cf4-bl-8P1" firstAttribute="top" secondItem="Mbs-gu-vAH" secondAttribute="top" constant="20" id="YKh-om-S8X"/>
+                <constraint firstItem="Re2-4n-sqy" firstAttribute="top" secondItem="Cf4-bl-8P1" secondAttribute="bottom" constant="5" id="wSE-DR-uLi"/>
+            </constraints>
+            <size key="customSize" width="166" height="131"/>
+            <connections>
+                <outlet property="imgView" destination="Cf4-bl-8P1" id="pk5-Z0-2Uv"/>
+                <outlet property="lblTitle" destination="Re2-4n-sqy" id="QMu-Vj-oKT"/>
+            </connections>
+            <point key="canvasLocation" x="-277" y="-164"/>
+        </collectionViewCell>
+    </objects>
+</document>

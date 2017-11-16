@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zyC-4q-yX6" customClass="BannerCollectionCell" customModule="ShoppingCartApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerImage" translatesAutoresizingMaskIntoConstraints="NO" id="OiR-YW-7Mk">
+                        <rect key="frame" x="0.0" y="0.0" width="409" height="140"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="OiR-YW-7Mk" firstAttribute="leading" secondItem="zyC-4q-yX6" secondAttribute="leading" id="5ej-U4-RAd"/>
+                <constraint firstAttribute="trailing" secondItem="OiR-YW-7Mk" secondAttribute="trailing" id="CB5-Dd-jSh"/>
+                <constraint firstAttribute="bottom" secondItem="OiR-YW-7Mk" secondAttribute="bottom" id="cbQ-Zm-mek"/>
+                <constraint firstItem="OiR-YW-7Mk" firstAttribute="top" secondItem="zyC-4q-yX6" secondAttribute="top" id="jKE-BB-Fga"/>
+            </constraints>
+            <size key="customSize" width="668" height="273"/>
+            <connections>
+                <outlet property="imgView" destination="OiR-YW-7Mk" id="kHr-jx-c4r"/>
+            </connections>
+            <point key="canvasLocation" x="-321" y="-879"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bannerImage" width="640" height="480"/>
+    </resources>
+</document>

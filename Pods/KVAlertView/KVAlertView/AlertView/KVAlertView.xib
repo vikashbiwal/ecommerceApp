@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KVAlertView" customModule="KVAlertView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ou-4q-4Ib">
+                    <rect key="frame" x="10" y="0.0" width="394" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TP0-zj-NgL">
+                            <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpf-n6-4ij">
+                                    <rect key="frame" x="179" y="17" width="37" height="17.5"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kpf-n6-4ij" secondAttribute="bottom" constant="5" id="2zD-kB-52n"/>
+                                <constraint firstItem="kpf-n6-4ij" firstAttribute="centerX" secondItem="TP0-zj-NgL" secondAttribute="centerX" id="OhX-Xi-JUO"/>
+                                <constraint firstItem="kpf-n6-4ij" firstAttribute="centerY" secondItem="TP0-zj-NgL" secondAttribute="centerY" id="eRa-U7-wk0"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kpf-n6-4ij" secondAttribute="trailing" constant="8" id="ey5-Bs-GWD"/>
+                                <constraint firstItem="kpf-n6-4ij" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TP0-zj-NgL" secondAttribute="leading" constant="8" id="iFd-8J-RXt"/>
+                                <constraint firstItem="kpf-n6-4ij" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TP0-zj-NgL" secondAttribute="top" constant="5" id="z09-Tt-CPP"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3hS-2v-4Mh"/>
+                        <constraint firstItem="TP0-zj-NgL" firstAttribute="leading" secondItem="5ou-4q-4Ib" secondAttribute="leading" id="8gq-ix-h0m"/>
+                        <constraint firstItem="TP0-zj-NgL" firstAttribute="top" secondItem="5ou-4q-4Ib" secondAttribute="top" id="NP4-C2-3fa"/>
+                        <constraint firstAttribute="bottom" secondItem="TP0-zj-NgL" secondAttribute="bottom" id="OUZ-Eg-Wms"/>
+                        <constraint firstAttribute="trailing" secondItem="TP0-zj-NgL" secondAttribute="trailing" id="fJA-np-DLT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5ou-4q-4Ib" secondAttribute="trailing" constant="10" id="0fh-Im-L83"/>
+                <constraint firstItem="5ou-4q-4Ib" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OcJ-Q1-azO"/>
+                <constraint firstItem="5ou-4q-4Ib" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="u6m-2f-Mxt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblMessage" destination="kpf-n6-4ij" id="7v9-iN-dcm"/>
+                <outlet property="popupView" destination="5ou-4q-4Ib" id="hSP-hc-Aqu"/>
+                <outlet property="popupViewTopConstraint" destination="OcJ-Q1-azO" id="Heo-e5-gVW"/>
+                <outlet property="roundCornerView" destination="TP0-zj-NgL" id="o11-My-WUW"/>
+            </connections>
+            <point key="canvasLocation" x="3.5" y="-168.5"/>
+        </view>
+    </objects>
+</document>

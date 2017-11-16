@@ -1,0 +1,6 @@
+framework module KVAlertView {
+  umbrella header "KVAlertView-umbrella.h"
+
+  export *
+  module * { export * }
+}

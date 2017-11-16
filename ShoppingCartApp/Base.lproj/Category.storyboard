@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gS7-Zp-RyM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--CategoryVC-->
+        <scene sceneID="LeQ-gy-yzu">
+            <objects>
+                <viewController storyboardIdentifier="CategoryVC" automaticallyAdjustsScrollViewInsets="NO" id="gS7-Zp-RyM" customClass="CategoryVC" customModule="ShoppingCartApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qPI-ZO-EX3"/>
+                        <viewControllerLayoutGuide type="bottom" id="sSR-cr-9yu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oWB-hZ-bi4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7Z-Tc-0qU">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="40" id="4B3-98-utj" customClass="TableViewCell" customModule="ShoppingCartApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4B3-98-utj" id="Ioe-Lc-RLx">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1v8-Tm-pJx" customClass="Style1WidthLabel" customModule="ShoppingCartApp" customModuleProvider="target">
+                                                    <rect key="frame" x="40" y="9" width="37" height="22"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                                    <color key="textColor" red="0.25597129769999999" green="0.25597129769999999" blue="0.25597129769999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.86274509799999999" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="1v8-Tm-pJx" secondAttribute="bottom" constant="1" id="BNQ-bN-K0u"/>
+                                                <constraint firstItem="1v8-Tm-pJx" firstAttribute="top" secondItem="Ioe-Lc-RLx" secondAttribute="topMargin" constant="1" id="UUC-9v-hUk"/>
+                                                <constraint firstItem="1v8-Tm-pJx" firstAttribute="leading" secondItem="Ioe-Lc-RLx" secondAttribute="leadingMargin" constant="32" id="Wxg-03-gqE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.86274509799999999" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="lblTitle" destination="1v8-Tm-pJx" id="CvD-5q-ohj"/>
+                                            <outletCollection property="horizontalConstraints" destination="Wxg-03-gqE" collectionClass="NSMutableArray" id="J8i-pB-1wt"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLh-lD-OhP" customClass="ConstrainedView" customModule="ShoppingCartApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJd-XP-eBQ">
+                                        <rect key="frame" x="8" y="20" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="8Gp-19-CFW"/>
+                                            <constraint firstAttribute="height" constant="44" id="V9A-C8-GoT"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_arrow_left"/>
+                                        <connections>
+                                            <action selector="btnBackClicked:" destination="gS7-Zp-RyM" eventType="touchUpInside" id="dNC-Gb-Mb4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDk-l2-LGZ">
+                                        <rect key="frame" x="323" y="20" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="0qz-7f-M49"/>
+                                            <constraint firstAttribute="height" constant="44" id="fi9-yA-qAe"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_search"/>
+                                        <connections>
+                                            <action selector="search_btnClickedWithSender:" destination="gS7-Zp-RyM" eventType="touchUpInside" id="tG4-vI-zW0"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCb-P5-M2c" customClass="Style1WidthLabel" customModule="ShoppingCartApp" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="28" width="82" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="20"/>
+                                        <color key="textColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99598067999999995" green="0.9961468577" blue="0.99595874549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="DCb-P5-M2c" firstAttribute="leading" secondItem="wJd-XP-eBQ" secondAttribute="trailing" constant="8" id="38A-uz-l5O"/>
+                                    <constraint firstAttribute="trailing" secondItem="HDk-l2-LGZ" secondAttribute="trailing" constant="8" id="6CA-j7-TKH"/>
+                                    <constraint firstAttribute="bottom" secondItem="wJd-XP-eBQ" secondAttribute="bottom" id="82a-OI-aKx"/>
+                                    <constraint firstAttribute="bottom" secondItem="HDk-l2-LGZ" secondAttribute="bottom" id="Swe-6S-qne"/>
+                                    <constraint firstAttribute="height" constant="64" id="aHg-b7-7Ec"/>
+                                    <constraint firstItem="wJd-XP-eBQ" firstAttribute="leading" secondItem="nLh-lD-OhP" secondAttribute="leading" constant="8" id="aKt-EU-lR4"/>
+                                    <constraint firstItem="DCb-P5-M2c" firstAttribute="top" secondItem="nLh-lD-OhP" secondAttribute="top" constant="28" id="jAZ-o1-X6E"/>
+                                    <constraint firstItem="DCb-P5-M2c" firstAttribute="centerY" secondItem="wJd-XP-eBQ" secondAttribute="centerY" id="k28-Oc-Y38"/>
+                                    <constraint firstAttribute="bottom" secondItem="DCb-P5-M2c" secondAttribute="bottom" constant="8.5" id="mLa-gb-ECO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nLh-lD-OhP" secondAttribute="trailing" id="31w-sT-UuV"/>
+                            <constraint firstItem="S7Z-Tc-0qU" firstAttribute="leading" secondItem="oWB-hZ-bi4" secondAttribute="leading" id="QqN-ka-7pb"/>
+                            <constraint firstAttribute="trailing" secondItem="S7Z-Tc-0qU" secondAttribute="trailing" id="UHS-DR-JLh"/>
+                            <constraint firstItem="nLh-lD-OhP" firstAttribute="top" secondItem="oWB-hZ-bi4" secondAttribute="top" id="hP6-pE-DWv"/>
+                            <constraint firstItem="sSR-cr-9yu" firstAttribute="top" secondItem="S7Z-Tc-0qU" secondAttribute="bottom" id="hTe-e3-CBZ"/>
+                            <constraint firstItem="S7Z-Tc-0qU" firstAttribute="top" secondItem="nLh-lD-OhP" secondAttribute="bottom" id="pwS-gi-C5a"/>
+                            <constraint firstItem="nLh-lD-OhP" firstAttribute="leading" secondItem="oWB-hZ-bi4" secondAttribute="leading" id="unB-w7-ihQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTitle" destination="DCb-P5-M2c" id="Mkm-VD-xVC"/>
+                        <outlet property="navigationBarView" destination="nLh-lD-OhP" id="i9v-SO-vs0"/>
+                        <outlet property="tableView" destination="S7Z-Tc-0qU" id="zWK-No-7ej"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wsB-Lt-o4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-170.40000000000001" y="114.69265367316342"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_arrow_left" width="24" height="24"/>
+        <image name="ic_search" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zyC-4q-yX6" customClass="FlashOfferCollectionCell" customModule="ShoppingCartApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pN-bI-Czu" customClass="Style1WidthLabel" customModule="ShoppingCartApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="409" height="0.0"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="bannerImage" translatesAutoresizingMaskIntoConstraints="NO" id="OiR-YW-7Mk">
+                        <rect key="frame" x="0.0" y="0.5" width="409" height="139.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryD-yV-2lV" customClass="Style1WidthLabel" customModule="ShoppingCartApp" customModuleProvider="target">
+                        <rect key="frame" x="191" y="149" width="27.5" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="9pN-bI-Czu" firstAttribute="top" secondItem="zyC-4q-yX6" secondAttribute="top" id="3AO-XK-OkM"/>
+                <constraint firstAttribute="trailing" secondItem="OiR-YW-7Mk" secondAttribute="trailing" id="D1N-ej-yqs"/>
+                <constraint firstAttribute="bottom" secondItem="ryD-yV-2lV" secondAttribute="bottom" constant="1" id="Iy2-wL-BtV"/>
+                <constraint firstItem="9pN-bI-Czu" firstAttribute="leading" secondItem="zyC-4q-yX6" secondAttribute="leading" id="JU7-zq-ee9"/>
+                <constraint firstItem="OiR-YW-7Mk" firstAttribute="top" secondItem="9pN-bI-Czu" secondAttribute="bottom" constant="0.5" id="LRy-JG-zkT"/>
+                <constraint firstAttribute="bottom" secondItem="OiR-YW-7Mk" secondAttribute="bottom" constant="30" id="WbY-HD-hP7"/>
+                <constraint firstItem="OiR-YW-7Mk" firstAttribute="leading" secondItem="zyC-4q-yX6" secondAttribute="leading" id="gg6-ad-lrh"/>
+                <constraint firstAttribute="trailing" secondItem="9pN-bI-Czu" secondAttribute="trailing" id="hpo-xg-slO"/>
+                <constraint firstItem="ryD-yV-2lV" firstAttribute="centerX" secondItem="zyC-4q-yX6" secondAttribute="centerX" id="lYm-XR-59U"/>
+            </constraints>
+            <size key="customSize" width="668" height="273"/>
+            <connections>
+                <outlet property="imgView" destination="OiR-YW-7Mk" id="kHr-jx-c4r"/>
+                <outlet property="lblTitle" destination="ryD-yV-2lV" id="TVa-HF-Pya"/>
+            </connections>
+            <point key="canvasLocation" x="-423" y="-902"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bannerImage" width="640" height="480"/>
+    </resources>
+</document>

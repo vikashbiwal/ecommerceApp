@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="k8P-2s-AG3" customClass="VDatePickerView" customModule="ShoppingCartApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAv-Oh-KFm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <action selector="datePickerCancelBtnClicked:" destination="k8P-2s-AG3" eventType="touchUpInside" id="cWV-wJ-ILb"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LVs-LC-5Z0" customClass="CornerRadiusView" customModule="ShoppingCartApp" customModuleProvider="target">
+                    <rect key="frame" x="10" y="417" width="355" height="240"/>
+                    <subviews>
+                        <datePicker clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZYf-N8-S2l">
+                            <rect key="frame" x="0.0" y="40" width="355" height="200"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="5pf-cn-ft2"/>
+                            </constraints>
+                            <date key="date" timeIntervalSinceReferenceDate="483258406.06945503">
+                                <!--2016-04-25 06:26:46 +0000-->
+                            </date>
+                        </datePicker>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cd-oZ-kSN" customClass="JPWidthButton" customModule="ShoppingCartApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="78" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="VFo-NB-LTV"/>
+                                <constraint firstAttribute="width" constant="78" id="if3-6P-d89"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="8" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="1" green="0.3294117647" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="datePickerCancelBtnClicked:" destination="k8P-2s-AG3" eventType="touchUpInside" id="IyB-LA-T84"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPa-8K-kxg" customClass="JPWidthButton" customModule="ShoppingCartApp" customModuleProvider="target">
+                            <rect key="frame" x="282" y="0.0" width="73" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="73" id="42J-td-c9M"/>
+                                <constraint firstAttribute="height" constant="32" id="DsP-Rv-MSJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="8" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" red="1" green="0.3294117647" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="datePickerDoneBtnClicked:" destination="k8P-2s-AG3" eventType="touchUpInside" id="D9F-2I-008"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="9cd-oZ-kSN" firstAttribute="top" secondItem="LVs-LC-5Z0" secondAttribute="top" id="2Z7-JC-vXv"/>
+                        <constraint firstItem="ZYf-N8-S2l" firstAttribute="leading" secondItem="LVs-LC-5Z0" secondAttribute="leading" id="WgJ-HD-QHb"/>
+                        <constraint firstAttribute="bottom" secondItem="ZYf-N8-S2l" secondAttribute="bottom" id="i7g-AB-TBq"/>
+                        <constraint firstAttribute="height" constant="240" id="ici-BZ-XmZ"/>
+                        <constraint firstAttribute="trailing" secondItem="pPa-8K-kxg" secondAttribute="trailing" id="ncl-tF-TKa"/>
+                        <constraint firstItem="9cd-oZ-kSN" firstAttribute="leading" secondItem="LVs-LC-5Z0" secondAttribute="leading" id="qeo-k9-vPg"/>
+                        <constraint firstItem="pPa-8K-kxg" firstAttribute="top" secondItem="LVs-LC-5Z0" secondAttribute="top" id="r8d-dV-6Ff"/>
+                        <constraint firstAttribute="trailing" secondItem="ZYf-N8-S2l" secondAttribute="trailing" id="xn5-W8-4p6"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRight" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeft" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="topRight" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="topLeft" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="blurEffect" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LVs-LC-5Z0" secondAttribute="trailing" constant="10" id="Cf2-74-1Cf"/>
+                <constraint firstAttribute="bottom" secondItem="uAv-Oh-KFm" secondAttribute="bottom" id="D3P-1p-Z9o"/>
+                <constraint firstAttribute="trailing" secondItem="uAv-Oh-KFm" secondAttribute="trailing" id="agP-Eo-WNA"/>
+                <constraint firstItem="uAv-Oh-KFm" firstAttribute="top" secondItem="k8P-2s-AG3" secondAttribute="top" id="d4g-08-Wk8"/>
+                <constraint firstAttribute="bottom" secondItem="LVs-LC-5Z0" secondAttribute="bottom" constant="10" id="kGH-Ui-s5T"/>
+                <constraint firstItem="LVs-LC-5Z0" firstAttribute="leading" secondItem="k8P-2s-AG3" secondAttribute="leading" constant="10" id="tYb-t0-qvW"/>
+                <constraint firstItem="uAv-Oh-KFm" firstAttribute="leading" secondItem="k8P-2s-AG3" secondAttribute="leading" id="yWu-7Q-4Fo"/>
+            </constraints>
+            <connections>
+                <outlet property="datePicker" destination="ZYf-N8-S2l" id="64t-4m-siI"/>
+                <outlet property="datePickerBottomConstraint" destination="kGH-Ui-s5T" id="hUJ-Zv-u8E"/>
+                <outletCollection property="horizontalConstraints" destination="5pf-cn-ft2" collectionClass="NSMutableArray" id="TmO-Fd-N4n"/>
+                <outletCollection property="horizontalConstraints" destination="ici-BZ-XmZ" collectionClass="NSMutableArray" id="5xk-mu-PAC"/>
+            </connections>
+            <point key="canvasLocation" x="106" y="-31"/>
+        </view>
+    </objects>
+</document>
